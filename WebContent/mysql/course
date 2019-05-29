@@ -1,0 +1,11 @@
+CREATE TABLE `course` (
+  `course_Id` int(5) NOT NULL AUTO_INCREMENT,
+  `course_Name` varchar(20) NOT NULL,
+  `course_Remain` int(3) NOT NULL,
+  `course_Total` int(3) NOT NULL,
+  `course_Teacher` varchar(10) NOT NULL,
+  `course_Place` varchar(30) DEFAULT NULL,
+  `course_Time` varchar(30) NOT NULL,
+  `course_Timelength` varchar(12) NOT NULL,
+  PRIMARY KEY (`course_Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

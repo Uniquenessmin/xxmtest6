@@ -1,0 +1,10 @@
+CREATE TABLE `student` (
+  `sno` varchar(50) NOT NULL DEFAULT '',
+  `sname` varchar(50) NOT NULL,
+  `spassword` varchar(50) NOT NULL,
+  `smajor` varchar(50) NOT NULL,
+  `sclass` varchar(50) NOT NULL,
+  `sgrade` varchar(50) NOT NULL,
+  `selected_course` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`sno`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
