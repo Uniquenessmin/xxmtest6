@@ -55,18 +55,7 @@ public class StudentInfoServlets extends HttpServlet {
               String sql1 = "select * from student where sno = " + numSession;
           
               ResultSet resultSet = statement.executeQuery(sql1); 
-          
-              //判断参数是否为空
-              /*req.setCharacterEncoding("UTF-8");
-              String keyString = req.getParameter("id");
-              
-              if(keyString == null) {
-                    keyString = "";
-                    resp.sendRedirect("FindServlet");
-                    
-                    return;
-              }*/
-              
+  
               List<Student> courseStudentList = new ArrayList<Student>(); 
               while (resultSet.next()) { 
                   Student student = new Student();
@@ -97,15 +86,7 @@ public class StudentInfoServlets extends HttpServlet {
               }
  
               req.setAttribute("studentCourseList", studentCourseList);
-              
-              //后台显示数据
-              /*JSONArray jsonArray2 = JSONArray.fromObject(studentCourseList);
-              System.out.println(jsonArray2.toString());*/
-              
-              //返回json数据
-              /*PrintWriter out = resp.getWriter();
-              out.print(jsonArray2.toString());*/
-              
+
               resultSet.close(); 
               statement.close(); 
               conn.close(); 

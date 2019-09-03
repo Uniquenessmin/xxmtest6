@@ -15,7 +15,7 @@ public class DBOper {
 
   //驱动
   	private	static String driver = "com.mysql.cj.jdbc.Driver";
-  	//database名，选择我要用的数据库shiyan5
+  	//database名，选择我要用的数据库shiyan6
   	private	static String url = "jdbc:mysql://localhost:3306/shiyan6?serverTimezone=UTC";
   	//验证用户名和密码
   	private	static String	username = "root";
@@ -86,16 +86,7 @@ public class DBOper {
 			else {
 				System.out.println("连接数据库异常");
 			}
-//			StudentDao dao2 = new StudentDao();
-//			Student user = new Student();
-//			user.setNo("133");
-//	        user.setName("username");
-//	        user.setPasswd("userpass");
-//	        user.setMajor("major");
-//	        user.setGrade("grade");
-//	        user.setSclass("sclass");
-//			boolean f = dao2.addUser(user);
-//			System.out.println(f);
+
 		} catch (Exception ex) {
 			// TODO: handle exception
 			ex.printStackTrace();

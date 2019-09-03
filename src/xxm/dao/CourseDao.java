@@ -51,7 +51,11 @@ public class CourseDao  extends DBOper{
        return r;
    }
    
-  
+  /**
+   * 更新
+   * @param course
+   * @return
+   */
    public boolean update(Course course) {
 	   
 	   String sql = "update course set course_Name=?,course_Teacher=?,course_Place=?,course_Time=?,course_Timelength=?,course_Total=?,course_Remain=? where course_Id = ? ";

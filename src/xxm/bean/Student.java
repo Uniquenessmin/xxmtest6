@@ -2,7 +2,7 @@ package xxm.bean;
 
 /**
  * 学生实体类
- * @author Administrator
+ * @author xxm
  *
  */
 public class Student {
